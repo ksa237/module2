@@ -23,7 +23,6 @@ public class Main {
             System.out.println("Ввведите два числа. Номер продукта из списка и количество выбранного продукта в формате:");
             System.out.println("номер_продукта количество");
 
-
             String input = scanner.nextLine();
             if("end".equals(input)) {
                 double sum = 0;
@@ -31,7 +30,7 @@ public class Main {
                     sum += (basket[item] * prices[item] );
                 }
                 System.out.println("Итого, в корзине товаров на " + sum + " руб.");
-                    System.out.println("-=Программа завершена=-");
+                System.out.println("-=Программа завершена=-");
                 break;
             }
 
@@ -41,10 +40,6 @@ public class Main {
 
             basket[numProduct]= basket[numProduct] + countProduct;
 
-
-
-
         }
-        
     }
 }
