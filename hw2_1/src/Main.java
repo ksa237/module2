@@ -10,8 +10,8 @@ public class Main {
 
 
         System.out.println("-=Список возможных товаров для покупки=-");
-        for (int i=0; i < products.length; i++) {
-            System.out.println(i+1 + ". "+ products[i] + ", " + prices[i] + " руб./шт." );
+        for (int i = 0; i < products.length; i++) {
+            System.out.println(i + 1 + ". " + products[i] + ", " + prices[i] + " руб./шт.");
         }
 
         int[] basket = new int[products.length]; // здесь изначально все нули, кол-во =0, это удобно.
@@ -24,10 +24,10 @@ public class Main {
             System.out.println("номер_продукта количество");
 
             String input = scanner.nextLine();
-            if("end".equals(input)) {
+            if ("end".equals(input)) {
                 double sum = 0;
-                for (int item=0; item < basket.length; item++) {
-                    sum += (basket[item] * prices[item] );
+                for (int item = 0; item < basket.length; item++) {
+                    sum += (basket[item] * prices[item]);
                 }
                 System.out.println("Итого, в корзине товаров на " + sum + " руб.");
                 System.out.println("-=Программа завершена=-");
@@ -38,7 +38,7 @@ public class Main {
             int numProduct = Integer.parseInt(arrInput[0]) - 1;
             int countProduct = Integer.parseInt(arrInput[1]);
 
-            basket[numProduct]= basket[numProduct] + countProduct;
+            basket[numProduct] = basket[numProduct] + countProduct;
 
         }
     }
